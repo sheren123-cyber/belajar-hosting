@@ -1,0 +1,184 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	}
+body {
+	font-family: Helvetica;
+	line-height: 1.7;
+	background-color: white;
+	}
+header {
+	background-color: #5799e5;
+	color: white;
+	padding: 15px15px;
+	text-align: center;
+}
+
+header span {
+	font-family: Helvetica;
+	font-size: 20px;
+	color:#dbe9f5;
+	}
+	
+header h1 {
+	font-family: 'Poppins';
+	font-size: 75px;
+	}
+	
+nav ul {
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	}
+	
+nav ul li {
+	margin: 0 20px;
+	}
+	
+nav ul li a 
+{
+	color: white;
+	font-family: Arial;
+	font-size: 20px;
+	text-decoration: none;
+	font-weight: bold;
+	}
+	
+section {
+	padding: 25px 20px;
+	text-align: center;
+	border: 2px solid #ccc; 
+	border-radius: 20px;     
+	margin: 30px 60px;       
+	box-shadow: 0 2px 8px #e6e5e6; 
+	}
+	
+#beranda{
+	font-family: 'Poppins';
+	background-color: white;
+	color: #0e26d7;
+	}
+	
+#beranda h2{
+	font-size: 35px;
+	color: #0e26d7;
+	}
+	
+#beranda p{
+	font-family: Verdana;
+	}
+	
+#produk{
+	background-color: #fcfbee;
+	}
+	
+#produk h2{
+	font-size: 43px;
+	color: #9b6146;
+	}
+	
+#produk h3{
+	font-size: 20px;
+	color: #b06817;
+	}
+
+#produk p{
+	font-size: 17px;
+	color: #e59439;
+	}
+	
+.produk-list {
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+	margin-top: 20px;
+	flex-wrap: wrap;
+}
+.produk-item {
+	background-color: #FCECDD;
+	border-radius: 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+	padding: 25px;
+	width: 285px;
+}
+.produk-item img {
+	width: 100%;
+	border-radius: 5px;
+}
+
+input,textarea,button{
+	margin: 8px 0;
+	padding: 10px;
+	width: 80%;
+	max-width: 400px;
+	font-size: 1em;
+	}
+	
+button{
+	background-color: #f1bf50;
+	color: white;
+	font-family: poppins;
+	border: none;
+	cursor: pointer;
+	border-radius: 30px;
+	}
+	
+button:hover{
+	background-color: #f7d999;
+	}
+	
+#keranjang {
+	padding:15px;
+	margin-bottom: 20px;
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	}
+
+#tentang{
+	font-family: 'Poppins';
+	background-color: #e9f3fb;
+	color: #05156c;
+	}
+	
+#tentang h2{
+	font-size: 35px;
+	color: #0e26d7;
+	}
+	
+#tentang p{
+	font-family: Verdana;
+	}
+	
+#kontak{
+	background-color: #fcfbee;
+	}
+	
+#kontak h2{
+	font-size: 43px;
+	color: #9b6146;
+	}
+	
+#kontak p{
+	font-size: 19px;
+	color:#e59439;
+	}
+	
+footer {
+	background-color:#5799e5;
+	color: white;
+	font-size: 25px;
+	text-align: center;
+	padding: 25px 0;
+	margin-top: 25px;
+	}
+
+footer p{
+	font-family: Verdana ;
+	font-size: 12px;
+	color: #dbe9f5;
+	}
+

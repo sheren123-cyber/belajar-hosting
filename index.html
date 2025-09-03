@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&family=Rubik:wght@300;500;700&display=swap" rel="stylesheet">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Yummy Cookies</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<header> 
+	<div class="marquee">
+		<span>♡Selamat datang di website kami♡</span>
+	</div>
+	
+	<style>
+		.marquee {
+		overflow: hidden;
+		white-space: nowrap;
+		box-sizing: border-box;
+	}
+
+	.marquee span {
+		display: inline-block;
+		padding-left: 100%;
+		animation: marquee 12s linear infinite;
+	}
+
+	@keyframes marquee {
+		0% { transform: translateX(0%); }
+		100% { transform: translateX(-100%); }
+	}
+	</style>
+
+	<h1>🍪 Yummy Cookies 🍪</h1>
+	<nav>
+		<ul>
+			<li><a href="#beranda">BERANDA</a></li>
+			<li><a href="#produk">PRODUK</a></li>
+			<li><a href="#tentang">TENTANG</a></li>
+			<li><a href="#kontak">KONTAK</a></li>
+			<li><a href="#pemesanan">PEMESANAN</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+<section id="beranda">
+	<h2>Selamat Datang di Yummy Cookies</h2>
+	<p>♡ Kami menyediakan berbagai cookie kualitas tinggi dengan harga terjangkau dan rasa yang enak ♡</p>
+</section>
+
+<section id="produk">
+	<h2> Produk Yummy Cookies ☕︎ </h2>
+	<div class="produk-list">
+		<div class="produk-item">
+			<img src="produk1.avif" alt="Produk 1" width="500" height="180" />
+			<h3>Milk Chocolate Chip Cookie</h3>
+			<p>Harga: Rp 10.000</p>
+			<button onclick="tambahKeranjang('Milk Chocolate Chip Cookie',10000)">Pesan</button>
+		</div>
+		
+		<div class="produk-item">
+			<img src="produk2.avif" alt="produk2"  width="450" height="180" />
+			<h3>Chocolate Peanut Butter Cup Chesscake</h3>
+			<p>Harga: Rp 15.000</p>
+			<button onclick="tambahKeranjang('Chocolate Peanut Butter Cup Chesscake',15000)">Pesan</button>
+		</div>
+		
+		<div class="produk-item">
+			<img src="produk3.avif" alt="produk3"  width="500" height="180" />
+			<h3>North Carolina Lemon Pie</h3>
+			<p>Harga: Rp 18.000</p>
+			<button onclick="tambahKeranjang('North Carolina Lemon Pie',18000)">Pesan</button>
+		</div>
+		
+		<div class="produk-item">
+			<img src="produk4.avif" alt="produk4"  width="500" height="180" />
+			<h3>Cookie & Creams Cookie</h3>
+			<p>Harga: Rp 10.000</p>
+			<button onclick="tambahKeranjang('Cookie & Creams Cookie',10000)">Pesan</button>
+		</div>
+		
+		<div class="produk-item">
+			<img src="produk5.avif" alt="produk5"  width="500" height="180" />
+			<h3>Caramel Shortbread Cookie</h3>
+			<p>Harga: Rp 15.000</p>
+			<button onclick="tambahKeranjang('Caramel Shortbread Cookie',15000)">Pesan</button>
+		</div>
+		
+		<div class="produk-item">
+			<img src="produk6.avif" alt="produk6"  width="500" height="180" />
+			<h3>Nilla Bean Cupcake Cookie</h3>
+			<p>Harga: Rp 12.000</p>
+			<button onclick="tambahKeranjang('Nilla Bean Cupcake Cookie',12000)">Pesan</button>
+		</div>
+		
+		<div class="produk-item">
+			<img src="produk7.avif" alt="produk7"  width="500" height="180" />
+			<h3>Cinnamon Crunch Cookie</h3>
+			<p>Harga: Rp 12.000</p>
+			<button onclick="tambahKeranjang('Cinnamon Crunch Cookie',12000)">Pesan</button>
+		</div>
+		
+		<div class="produk-item">
+			<img src="produk8.avif" alt="produk8"  width="500" height="180" />
+			<h3>Rocky Road Brownise Cookie</h3>
+			<p>Harga: Rp 20.000</p>
+			<button onclick="tambahKeranjang('Nilla Bean Cupcake Cookie',20000)">Pesan</button>
+		</div>
+	</div>
+</section>
+
+<section id ="pemesanan">
+	<h2>Keranjang & Form Pemesanan</h2>
+	<div id="keranjang"></div>
+	
+	<h3>Form Pemesanan</h3>
+	<form onsubmit = "kirimPesanan(event)">
+	<label>Nama:</label><br/>
+	<input type = "text" id="nama" required><br/>
+	<label>Alamat:</label><br/>
+	<textarea id= "alamat" required></textarea><br/>
+	<label>Nomor HP:</label><br/>
+	<input type = "tel" id="telepon" required><br/>
+	<button type = "submit">Kirim Pesanan</button>
+</form>
+<div id ="konfirmasi" style="margin-top: 15px; color: blue;"></div>
+</section>
+
+<section id="tentang">
+	<h2>Tentang Kami >ᴗ< </h2>
+	<p>Yummy Cookies sudah berdiri sejak 2018 untuk menyajikan cookies yang digemari semua kalangan.</p>
+	<p>  ★ᯓ SEKALI MAKAN, LANGSUNG KETAGIHAN ᯓ★ </p>
+</section>
+
+<section id="kontak">
+	<h2>Hubungi Kami melalui ⤸</h2>
+	<p>Email: yummycookies@gmail.com</p>
+	<p>✆ WhatsApp: 0838-9682-7055</p>
+		<form>
+			<label>Nama:</label><br>
+			<input type="text" required><br>
+			<label>Email:</label><br/>
+			<input type= "email" required><br>
+			<label>Pesan:</label><br/>
+			<textarea required></textarea><br>
+			<button type="submit">Kirim Pesan</button>
+		</form>
+</section>
+
+<footer>
+	<h1>🍪 YUMMY COOKIE 🍪</hi>
+	<p>&copy; 2025 Yummy Cookies Siap Melayani Anda</p>
+	<p>&copy; Privacy policy | Terms and Conditions | Non-edible Cookie Preference</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
